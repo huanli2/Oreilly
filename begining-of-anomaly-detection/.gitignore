@@ -1,3 +1,5 @@
+*.ckpt
+my_env/
 keras_MNIST_CNN.h5
 data-sample/
 ./.ipynb_checkpoints
