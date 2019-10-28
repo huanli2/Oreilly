@@ -25,3 +25,12 @@ $ .\my_env\Scripts\activate  # on Windows
 To deactivate this environment, type `deactivate`. While the environment is active, any package you install using pip will be installed in this isolated environment, and Python will only have access to these packages (if you also want access to the system’s packages, you should create the environment using virtualenv’s --system-site-packages option). Check out virtualenv’s documentation for more information.
 
 
+#### install all the required modules and their dependencies
+```
+$ python3 -m pip install -U jupyter matplotlib numpy pandas scipy scikit-learn
+```
+
+#### check your installation
+```
+python3 -c "import jupyter, matplotlib, numpy, pandas, scipy, sklearn"
+```
