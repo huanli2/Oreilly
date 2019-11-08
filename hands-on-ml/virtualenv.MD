@@ -34,3 +34,12 @@ $ python3 -m pip install -U jupyter matplotlib numpy pandas scipy scikit-learn
 ```
 python3 -c "import jupyter, matplotlib, numpy, pandas, scipy, sklearn"
 ```
+
+#### save Scikit-Learn models
+```python
+import joblib
+
+joblib.dump(my_model, "my_model.pkl")
+# and later...
+my_model_loaded = joblib.load("my_model.pkl")
+```
